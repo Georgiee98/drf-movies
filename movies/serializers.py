@@ -6,5 +6,3 @@ class MovieSerializer(serializers.ModelSerializer):
     class Meta:
         model = MovieData
         fields = '__all__'
-
-

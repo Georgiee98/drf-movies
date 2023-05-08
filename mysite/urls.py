@@ -31,8 +31,4 @@ router.register('comedy', ComedyViewSet)
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include(router.urls)),
-]
-
-urlpatterns += [
-    # ... the rest of your URLconf goes here ...
-] + static(settings.MEDIA_ROOT, document_root=settings.MEDIA_URL)
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
